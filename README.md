@@ -5,7 +5,7 @@ This project aim to demostrate how Video Sharing Website can be developed using 
 
 Type in commandline
 
-### `php artisan migrate:fresh --seed `
+### `php artisan migrate --seed `
 
 ### `php artisan serve`
 
