@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('videos', function (Blueprint $table) {
-            $table->id();
-            $table->string('token', 64)->unique();
-            $table->string('description');
-            $table->string('category');
-            $table->timestamps();
+        Schema::table('videos', function (Blueprint $table) {
+            $table->foreign('category')->references('category')->on('categories');
         });
     }
 
@@ -25,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('videos');
+        Schema::table('video', function (Blueprint $table) {
+            //
+        });
     }
 };
