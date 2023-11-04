@@ -9,7 +9,9 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $rw->title_of_video }}</h5>
                             <p class="card-text">{{ $rw->user }}</p>
-                            <p class="card-text" style="font-size: 11px;">{{ $rw->views . ' ' . $rw->created_at }}</p>
+                            <p class="card-text" style="font-size: 11px;">
+                            <i class="bi bi-eye" style="padding-right: 4px;">{{ ' ' . $rw->views }}</i> {{ date('d/m/Y', strtotime($rw->created_at)) }}
+                            </p>
                         </div>
                     </div>
                 @endforeach

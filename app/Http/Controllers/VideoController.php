@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class VideoController extends Controller
 {
     function home() {
-        $data = Video::all();
+        $data = Video::limit(8)->get();
         return view("home", ['videos' => $data]);
     }
 }

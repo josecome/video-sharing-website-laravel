@@ -21,7 +21,7 @@ class VideoFactory extends Factory
                 'category' => $category[array_rand($category)],
                 'title_of_video' => $this->faker->text($maxNbChars = 20),
                 'description' => $this->faker->text($maxNbChars = 100),
-                'video_image'=> 'img_' . $this->faker->numberBetween(1, 6),
+                'video_image'=> 'img_' . $this->faker->numberBetween(1, 8),
                 'views'=>  $this->faker->numberBetween(1, 9999),
                 'user_id' => random_int(1, 6),
         ];
