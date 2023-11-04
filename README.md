@@ -1,6 +1,9 @@
 # Video Sharing Website Laravel
 This project aim to demostrate how Video Sharing Website can be developed using PHP + Laravel
 
+Home page
+<img src="public/home.jpg">
+
 ## To run the project
 
 Type in commandline

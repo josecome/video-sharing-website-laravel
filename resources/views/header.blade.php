@@ -47,8 +47,8 @@
                 <button type="submit" class="btn btn-link">Sair</button>
             </form>
         @else
-          <a href="/login" style="text-decoration: none; padding-left: 8px;">Entrar</a>
-          <a href="/register" style="text-decoration: none; padding-left: 8px;">Registar</a>
+          <a href="/login" style="text-decoration: none; padding-left: 8px;">Login</a>
+          <a href="/register" style="text-decoration: none; padding-left: 8px;">Register</a>
         @endauth
     </div>
   </div>
