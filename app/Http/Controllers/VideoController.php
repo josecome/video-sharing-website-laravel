@@ -9,6 +9,6 @@ class VideoController extends Controller
 {
     function home() {
         $data = Video::all();
-        return view("home");
+        return view("home", ['videos' => $data]);
     }
 }

@@ -18,6 +18,7 @@ class CategoryFactory extends Factory
     {
         return [
                 'category' => str_replace(' ', '', $this->faker->unique()->text($maxNbChars = 40)),
+                'user_id' => random_int(1, 6)
         ];
     }
 }
