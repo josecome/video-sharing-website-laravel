@@ -22,4 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('cors')->group(function () {
     Route::get('/', [ApiController::class, 'home'])->name('home');
     Route::get('/video/{id}', [ApiController::class, 'video'])->name('videos');
+    Route::get('/video/{id}/options_of_videos', [ApiController::class, 'OptionsOfVideos'])->name('videos');
 });
