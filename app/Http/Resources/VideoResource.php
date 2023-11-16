@@ -21,7 +21,7 @@ class VideoResource extends JsonResource
             'description' => $this->description,
             'video_image' => $this->description,
             'views' => $this->views,
-            'posts' => CommentResource::collection($this->comments),
+            'comments' => CommentResource::collection($this->comments),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
