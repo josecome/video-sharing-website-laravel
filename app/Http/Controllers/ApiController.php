@@ -16,7 +16,7 @@ class ApiController extends Controller
         return new VideoResource(Video::findOrFail($id));
     }
     function OptionsOfVideos(int $id) {
-        $data = Video::all()->random(10);
+        $data = Video::with('user')->get();
         return json_decode($data);
     }
 }
