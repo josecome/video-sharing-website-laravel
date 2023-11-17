@@ -14,9 +14,8 @@ return new class extends Migration
         Schema::create('likes', function (Blueprint $table) {
             $table->id();
             $table->string('type', 20);
-            $table->unsignedBigInteger('video_id');
+            $table->morphs('likeable');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('video_id')->references('id')->on('videos')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });

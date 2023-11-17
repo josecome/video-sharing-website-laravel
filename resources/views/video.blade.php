@@ -8,6 +8,16 @@
                         <source src="" type="video/mp4">
                     </video>   <br />
                     <h2>{{ $video->title_of_video }}        </h2>
+                    <br />
+                    <div>
+                        @foreach ($comments as $comment)
+                        <div class="card w-75 mb-3" style="background-color: #D6DCD7; width: 800px;">
+                            <div class="card-body">
+                                <p class="card-text">{{ $comment->comment }}</p>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
                 </td>
                 <td>
                     <div>

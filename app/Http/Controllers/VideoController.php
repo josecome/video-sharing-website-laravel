@@ -12,8 +12,9 @@ class VideoController extends Controller
         return view("home", ['videos' => $data]);
     }
     function video(int $id) {
-        $data = Video::find($id);
-        $data2 = Video::limit(8)->get(); //Will be updated
-        return view("video", ['video' => $data, 'videos'=> $data2]);
+        $video = Video::find($id);
+        $videos = Video::limit(8)->get(); //Will be updated
+        $comments = Video::find($id)->comments;
+        return view("video", ['video' => $video, 'videos'=> $videos, 'comments' => $comments]);
     }
 }
