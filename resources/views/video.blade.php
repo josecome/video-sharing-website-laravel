@@ -25,13 +25,13 @@
               >
                 Subscribe
               </button>
-              <i class="bi bi-hand-thumbs-up" style="padding-right: 10px">
+              <i class="bi bi-hand-thumbs-up padding_right">
                 {{ $like }}
               </i>
-              <i class="bi bi bi-heart" style="padding-right: 10px">
+              <i class="bi bi bi-heart padding_right">
                 {{ $love }}
               </i>
-              <i class="bi bi-hand-thumbs-down" style="padding-right: 10px">
+              <i class="bi bi-hand-thumbs-down padding_right">
                 {{ $sad }}
               </i>
             </td>
