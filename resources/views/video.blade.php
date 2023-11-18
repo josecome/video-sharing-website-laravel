@@ -38,6 +38,20 @@
         </table>
                     <br />
                     <div>
+                        <div class="card-body" style="width: 80%; border: 1px solid gray; border-radius: 6px; text-align: left; font-size: 12px; font-weight: 500; line-height: 20px; list-style: none; padding: 2px 4px; display: inline-block;">
+                           <a href="''" style="text-decoration: none; background-color: #aed6f1; width: 28px; height: 18px; float: left; text-align: center; border-radius: 50%; font-size: 12px; padding-left: 10px; text-decoration: none">
+                           <strong style="color: white">
+                               {{ mb_substr($video->user->name, 0, 1) }}
+                            </strong>
+                    </a>
+            <input
+                  type="text"
+                  style="margin: 8px; width: 80%; "
+                  onChange="(e) => { setPostCommenttxt(e.target.value)}"
+                  placeholder="Write a comment..."
+                />
+                <button type="button" class="btn btn-light" style="margin-left: 10px; font-style: italic;">Post</button>
+            </div>
                         @foreach ($comments as $comment)
                         <div class="card w-75 mb-3" style="background-color: #D6DCD7; width: 800px;">
                             <div class="card-body">
