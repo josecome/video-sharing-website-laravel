@@ -58,13 +58,13 @@
                                 <p class="card-text">{{ $comment->comment }}</p>
                                               <br />
               <i class="bi bi-hand-thumbs-up" style="padding-right: 10px">
-
+                  {{ count($comment->likes->filter( function($value) {return $value->type == 'like';})) }}
               </i>
               <i class="bi bi bi-heart" style="padding-right: 10px">
-
+                  {{ count($comment->likes->filter( function($value) {return $value->type == 'love';})) }}
               </i>
               <i class="bi bi-hand-thumbs-down" style="padding-right: 10px">
-
+                 {{ count($comment->likes->filter( function($value) {return $value->type == 'sad';})) }}
               </i>
                             </div>
                         </div>
