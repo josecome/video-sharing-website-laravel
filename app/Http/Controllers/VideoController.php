@@ -31,4 +31,7 @@ class VideoController extends Controller
             'sad'=> $sad,
         ]);
     }
+    function studio() {
+        return view('studio');
+    }
 }

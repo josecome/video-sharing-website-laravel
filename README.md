@@ -9,6 +9,10 @@ Video page
 
 <img src="public/video2.jpg">
 
+Studio page
+
+<img src="public/studio.jpg">
+
 ## To run the project
 
 Type in commandline

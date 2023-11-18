@@ -19,6 +19,7 @@ use Inertia\Inertia;
 
 Route::get('/', [VideoController::class, 'home'])->name('home');
 Route::get('/videos/{id}', [VideoController::class, 'video'])->name('videos');
+Route::get('/studio', [VideoController::class, 'studio'])->name('studio');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
