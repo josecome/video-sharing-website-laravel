@@ -16,7 +16,7 @@ class VideoController extends Controller
         $video = Video::find($id);
         $videos = Video::limit(8)->get(); //Will be updated
         $comments = Video::find($id)->comments;
-        $likes = Like::whereIn('type', ['like', 'love', 'sad'])->get();
+        $likes = Like::where('likeable_id', '=', $id)->where('likeable_type', '=', 'App\Models\Video')->whereIn('type', ['like', 'love', 'sad'])->get();
         $like = count($likes->where('type', 'like'));
         $love = count($likes->where('type', 'love'));
         $sad = count($likes->where('type', 'sad'));
