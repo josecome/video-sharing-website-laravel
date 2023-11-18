@@ -19,19 +19,19 @@
               <span style="font-size: 22px; font-weight: bold;">{{ $video->user->name }}</span><br />
               <i class="bi bi-eye" style="padding-right: 4px;">{{ ' ' . $video->views }}</i>
             </td>
-            <td style="width: 300px; text-align: right;">
+            <td style="width: 320px; text-align: right;">
               <button
               style="margin-right: 20px; padding: 8px; border: 1px solid gray; border-radius: 26px; background-color: #6D6D6C; color: white;">
                 Subscribe
               </button>
               <i class="bi bi-hand-thumbs-up" style="padding-right: 10px">
-
+                {{ $like }}
               </i>
               <i class="bi bi bi-heart" style="padding-right: 10px">
-
+                {{ $love }}
               </i>
               <i class="bi bi-hand-thumbs-down" style="padding-right: 10px">
-
+                {{ $sad }}
               </i>
             </td>
           </tr>
