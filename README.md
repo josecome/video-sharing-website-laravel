@@ -11,7 +11,7 @@ Video page
 
 Studio page
 
-<img src="public/studio.jpg">
+<img src="public/studio_upload.jpg">
 
 ## To run the project
 
