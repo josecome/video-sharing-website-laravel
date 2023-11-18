@@ -9,14 +9,14 @@ use App\Http\Resources\VideoResource;
 class ApiController extends Controller
 {
     function home() {
-        $data = Video::limit(8)->get();
+        $data = Video::with('user')->limit(8)->get();
         return json_decode($data);
     }
     function video(int $id) {
         return new VideoResource(Video::findOrFail($id));
     }
     function OptionsOfVideos(int $id) {
-        $data = Video::with('user')->get();
+        $data = Video::where('id', '<>', $id)->with('user')->get();
         return json_decode($data);
     }
 }

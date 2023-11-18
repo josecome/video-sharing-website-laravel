@@ -3,7 +3,7 @@ This project aim to demostrate how Video Sharing Website can be developed using 
 
 Home page
 
-<img src="public/home.jpg">
+<img src="public/home2.jpg">
 
 Video page
 
