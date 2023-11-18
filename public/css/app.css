@@ -23,3 +23,43 @@
   #choosefile {
     z-index: 4;
   }
+
+  .userstylepic {
+    text-decoration: none;
+    background-color: #aed6f1;
+    width: 28px; height: 28px;
+    float: left;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .userstylepic2 {
+    background-color: #aed6f1;
+    width: 28px;
+    height: 28px;
+    float: left;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+
+  .divcommentstyle {
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 2px 4px;
+    display: inline-block;
+  }
+  .commentcontent {
+    margin: 8px;
+    width: 80%;
+  }

@@ -11,7 +11,7 @@
         <table>
           <tr>
             <td>
-                <a href="" class="userstylepic" style="text-decoration: none; background-color: #aed6f1; width: 28px; height: 28px; float: left; text-align: center; border-radius: 50%; font-size: 18px; padding-left: 10px;">
+                <a href="" class="userstylepic">
                 <strong style="color: white">
                   {{ mb_substr($video->user->name, 0, 1) }}
                 </strong>
@@ -38,8 +38,8 @@
         </table>
                     <br />
                     <div>
-                        <div class="card-body" style="width: 80%; border: 1px solid gray; border-radius: 6px; text-align: left; font-size: 12px; font-weight: 500; line-height: 20px; list-style: none; padding: 2px 4px; display: inline-block;">
-                           <a href="''" style="text-decoration: none; background-color: #aed6f1; width: 28px; height: 18px; float: left; text-align: center; border-radius: 50%; font-size: 12px; padding-left: 10px; text-decoration: none">
+                        <div class="card-body divcommentstyle container">
+                           <a href="''"  class="userstylepic2">
                            <strong style="color: white">
                                {{ mb_substr($video->user->name, 0, 1) }}
                             </strong>
