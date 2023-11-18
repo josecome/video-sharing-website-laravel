@@ -21,7 +21,8 @@
             </td>
             <td style="width: 320px; text-align: right;">
               <button
-              style="margin-right: 20px; padding: 8px; border: 1px solid gray; border-radius: 26px; background-color: #6D6D6C; color: white;">
+              class="subscribe"
+              >
                 Subscribe
               </button>
               <i class="bi bi-hand-thumbs-up" style="padding-right: 10px">

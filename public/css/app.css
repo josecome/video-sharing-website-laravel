@@ -63,3 +63,12 @@
     margin: 8px;
     width: 80%;
   }
+
+  .subscribe {
+    margin-right: 20px;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 26px;
+    background-color: #6D6D6C;
+    color: white
+  }
