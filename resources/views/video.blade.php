@@ -7,10 +7,16 @@
                    <video width="800" height="350" style="margin-top: 0px;" controls>
                         <source src="" type="video/mp4">
                     </video>   <br />
+                    <h2>{{ $video->title_of_video }}</h2>
         <table>
           <tr>
             <td>
-              <h2>{{ $video->title_of_video }}</h2>
+                <a href="" class="userstylepic" style="text-decoration: none; background-color: #aed6f1; width: 28px; height: 28px; float: left; text-align: center; border-radius: 50%; font-size: 18px; padding-left: 10px;">
+                <strong style="color: white">
+                  {{ mb_substr($video->user->name, 0, 1) }}
+                </strong>
+              </a>
+              <span style="font-size: 22px; font-weight: bold;">{{ $video->user->name }}</span><br />
             </td>
             <td style="width: 300px; text-align: right;">
               <button
