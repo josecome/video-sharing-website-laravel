@@ -17,6 +17,7 @@
                 </strong>
               </a>
               <span style="font-size: 22px; font-weight: bold;">{{ $video->user->name }}</span><br />
+              <i class="bi bi-eye" style="padding-right: 4px;">{{ ' ' . $video->views }}</i>
             </td>
             <td style="width: 300px; text-align: right;">
               <button
