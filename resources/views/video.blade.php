@@ -48,7 +48,6 @@
             <input
                   type="text"
                   style="margin: 8px; width: 80%; "
-                  onChange="(e) => { setPostCommenttxt(e.target.value)}"
                   placeholder="Write a comment..."
                 />
                 <button type="button" class="btn btn-light" style="margin-left: 10px; font-style: italic;">Post</button>
